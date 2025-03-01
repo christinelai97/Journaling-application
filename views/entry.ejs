@@ -1,9 +1,15 @@
-
+<!-- for loading entry page -->
 <%- include("partials/header"); -%>
 
 
     <h1><%=title%></h1>
     <p><%=content%></p>
+    <form action="/updating" method="post">
+        <input type="submit" name="update" value="Update" />
+    </form>
+    <form action="/delete" method="post">
+        <input type="submit" name="delete" value="Delete" />
+    </form>
 
 
 
